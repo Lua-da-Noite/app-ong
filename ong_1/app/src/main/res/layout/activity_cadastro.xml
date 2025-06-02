@@ -44,8 +44,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="12dp"
-                android:backgroundTint="#CCCCCC"
-                android:hint="👤 Nome de Usuário"
+                android:background="@drawable/texto_fundo"
+                android:hint="  👤 Nome de Usuário"
                 android:textSize="20sp"
                 android:textColorHint="#888888" />
 
@@ -53,8 +53,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="12dp"
-                android:backgroundTint="#CCCCCC"
-                android:hint="📧 Email"
+                android:background="@drawable/texto_fundo"
+                android:hint="  📧  Email"
                 android:inputType="textEmailAddress"
                 android:textSize="20sp"
                 android:textColorHint="#888888" />
@@ -63,8 +63,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="12dp"
-                android:backgroundTint="#CCCCCC"
-                android:hint="🔒 Senha"
+                android:background="@drawable/texto_fundo"
+                android:hint=" 🔒 Senha"
                 android:inputType="textPassword"
                 android:textSize="20sp"
                 android:textColorHint="#888888" />
@@ -73,8 +73,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="12dp"
-                android:backgroundTint="#CCCCCC"
-                android:hint="🔒 Confirmar Senha"
+                android:background="@drawable/texto_fundo"
+                android:hint=" 🔒 Confirmar Senha"
                 android:inputType="textPassword"
                 android:textSize="20sp"
                 android:textColorHint="#888888" />
@@ -83,8 +83,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="24dp"
-                android:backgroundTint="#CCCCCC"
-                android:hint="📱 Telefone"
+                android:background="@drawable/texto_fundo"
+                android:hint=" 📱 Telefone"
                 android:inputType="phone"
                 android:textSize="20sp"
                 android:textColorHint="#888888" />
