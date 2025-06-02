@@ -1,0 +1,59 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- Painel central com alinhamento responsivo -->
+    <LinearLayout
+        android:id="@+id/panel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#FFFFFF"
+        android:clipToPadding="false"
+        android:clipChildren="false">
+
+        <!-- Botão Login -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#F681A9"
+            android:elevation="6dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:cornerRadius="30dp" />
+
+        <!-- Botão Cadastro -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#F681A9"
+            android:elevation="6dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Cadastre-se"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:cornerRadius="30dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,289 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quadro_tarefas_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6B2C9"
+    tools:context=".quadro_tarefas">
+
+    <!-- Painel principal (ajustado apenas para responsividade) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/painel_kanban"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Cabeçalho (vazio, reservado para futuras inserções) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp" />
+
+            <!-- Título das colunas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#F39CA9"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="A fazer"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#D3F5A2"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="Em Andamento"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#A2F5B2"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="Concluído"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:alignmentMode="alignMargins"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:rowCount="3"
+                android:useDefaultMargins="true">
+
+                <!-- Texto padrão para tarefas -->
+                <TextView
+                    android:id="@+id/tarefa_padrao"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/borda_preta"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="4dp"
+                    android:gravity="start"
+                    android:padding="8dp"
+                    android:text="🗓️ Data e horário:\n📋 Nome da tarefa e info:\n👥 Voluntários:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <!-- Copie o mesmo para as outras 8 células -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/borda_preta"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="4dp"
+                    android:gravity="start"
+                    android:padding="8dp"
+                    android:text="🗓️ Data e horário:\n📋 Nome da tarefa e info:\n👥 Voluntários:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="2"
+                    android:layout_row="0"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/borda_preta"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="4dp"
+                    android:gravity="start"
+                    android:padding="8dp"
+                    android:text="🗓️ Data e horário:\n📋 Nome da tarefa e info:\n👥 Voluntários:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/borda_preta"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="4dp"
+                    android:gravity="start"
+                    android:padding="8dp"
+                    android:text="🗓️ Data e horário:\n📋 Nome da tarefa e info:\n👥 Voluntários:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/borda_preta"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="4dp"
+                    android:gravity="start"
+                    android:padding="8dp"
+                    android:text="🗓️ Data e horário:\n📋 Nome da tarefa e info:\n👥 Voluntários:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="2"
+                    android:layout_row="1"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/borda_preta"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="4dp"
+                    android:gravity="start"
+                    android:padding="8dp"
+                    android:text="🗓️ Data e horário:\n📋 Nome da tarefa e info:\n👥 Voluntários:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/borda_preta"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="4dp"
+                    android:gravity="start"
+                    android:padding="8dp"
+                    android:text="🗓️ Data e horário:\n📋 Nome da tarefa e info:\n👥 Voluntários:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/borda_preta"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="4dp"
+                    android:gravity="start"
+                    android:padding="8dp"
+                    android:text="🗓️ Data e horário:\n📋 Nome da tarefa e info:\n👥 Voluntários:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="2"
+                    android:layout_row="2"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/borda_preta"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="4dp"
+                    android:gravity="start"
+                    android:padding="8dp"
+                    android:text="🗓️ Data e horário:\n📋 Nome da tarefa e info:\n👥 Voluntários:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </GridLayout>
+
+
+            <!-- Navegação inferior -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#F6B2C9"
+                    android:text="📋 Tarefas"
+                    android:textColor="#000000"
+                    android:gravity="center" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="🏠          Início"
+                    android:textColor="#000000"
+                    android:gravity="center" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:gravity="center"
+                    android:text="📅 Calendário"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
