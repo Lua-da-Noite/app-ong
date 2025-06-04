@@ -65,7 +65,8 @@
                     android:textSize="18sp"
                     android:hint="Email"
                     android:inputType="textEmailAddress"
-                    android:textColorHint="#888888" />
+                    android:textColorHint="#888888"
+                    android:textColor="#000000"/>
             </LinearLayout>
 
             <!-- Campo Senha -->
@@ -95,7 +96,8 @@
                     android:textSize="18sp"
                     android:hint="Senha"
                     android:inputType="textPassword"
-                    android:textColorHint="#888888" />
+                    android:textColorHint="#888888"
+                    android:textColor="#000000"/>
             </LinearLayout>
 
             <!-- Botões: Login e Cadastre-se -->
